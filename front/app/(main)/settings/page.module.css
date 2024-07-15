@@ -1,0 +1,76 @@
+.settingsWrapper nav {
+  height: 40px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.settingsWrapper nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.settingsWrapper nav ul li {
+  padding: 3px 6px;
+}
+
+.settingsWrapper .formWrapper {
+  padding: 30px 48px 0;
+}
+
+.formWrapper h2 {
+  font-size: 16px;
+}
+
+.formWrapper .disclimer {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.formWrapper form {
+  max-width: 496px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+}
+
+.col2 {
+  display: flex;
+  gap: 24px;
+}
+
+.col2 > .formItem {
+  flex: auto 1 1;
+}
+
+.formItem label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formItem input {
+  border: 0;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 6px 12px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(209, 213, 219) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border-radius: 6px;
+}
+
+.formItem input[type="submit"] {
+  background-color: #3b82f6;
+  width: fit-content;
+  color: #fff;
+  box-shadow: 0;
+  border: 0;
+  cursor: pointer;
+}

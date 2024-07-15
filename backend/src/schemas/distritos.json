@@ -1,0 +1,14 @@
+{
+  "uid": "distritos",
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "municipio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "municipios"
+    }
+  }
+}

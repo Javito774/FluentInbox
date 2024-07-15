@@ -1,0 +1,46 @@
+{
+  "uid": "correo",
+  "attributes": {
+    "direccion": {
+      "type": "email",
+      "required": true
+    },
+    "servidorSMTP": {
+      "type": "string",
+      "required": true
+    },
+    "puerto": {
+      "type": "integer",
+      "required": true
+    },
+    "user": {
+      "type": "email",
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "limiteCorreos": {
+      "type": "integer"
+    },
+    "limiteTiempo": {
+      "type": "integer"
+    },
+    "horaInicio": {
+      "type": "time"
+    },
+    "horaFin": {
+      "type": "time"
+    },
+    "limiteTamanio": {
+      "type": "integer"
+    },
+    "admin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "user"
+    }
+  }
+}
+

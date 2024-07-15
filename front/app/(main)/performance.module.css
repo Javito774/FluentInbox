@@ -1,0 +1,74 @@
+.rocket {
+  width: 34px;
+  height: auto;
+  padding: 5px;
+  border-radius: 6px;
+}
+.rocket:hover {
+  background: #e2e8f0;
+}
+
+.buttonWrapper {
+  position: relative;
+}
+
+.statsCard {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px,
+    rgba(15, 23, 42, 0.05) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  z-index: 999;
+}
+
+.statsCard > div {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.statsCard > div:first-child {
+  border-right: 2px solid #f1f5f9;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.statsCard > div:nth-child(2) {
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.statsCard > div:nth-child(3) {
+  border-right: 2px solid #f1f5f9;
+}
+
+.cardtitle {
+  font-weight: 600;
+  font-size: 11pt;
+  color: #334155;
+}
+
+.cardDescription {
+  font-size: 10pt;
+  line-height: 0.9;
+  color: #94a3b8;
+}
+
+.data {
+  font-size: 30pt;
+  font-weight: 600;
+  margin: 20px 0;
+  flex-grow: 1;
+  display: flex;
+  align-self: center;
+  align-items: flex-end;
+  color: #334155;
+}

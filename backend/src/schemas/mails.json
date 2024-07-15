@@ -1,0 +1,45 @@
+{
+  "uid": "mails",
+  "attributes": {
+    "body": {
+      "type": "text"
+    },
+    "bodyhtml": {
+      "type": "text"
+    },
+    "asunto": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": ["draft", "sent", "snoozed", "scheduled", "canceled"]
+    },
+    "destinatarios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "destinatarios"
+    },
+    "listas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "listas"
+    },
+    "centros": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "centros"
+    },
+    "envio": {
+      "type": "ISOdatetime"
+    },
+    "editable": {
+      "type": "boolean"
+    },
+    "intrash": {
+      "type": "boolean"
+    },
+    "updated_at": {
+      "type": "datetime"
+    }
+  }
+}

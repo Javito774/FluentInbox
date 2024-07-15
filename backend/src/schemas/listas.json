@@ -1,0 +1,14 @@
+{
+  "uid": "listas",
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "destinatarios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "destinatarios"
+    }
+  }
+}

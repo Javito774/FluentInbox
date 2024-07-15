@@ -1,0 +1,79 @@
+{
+  "uid": "centro",
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "codigo": {
+      "type": "biginteger",
+      "required": true
+    },
+    "titularidad": {
+      "type": "enumeration",
+      "enum": [
+        "público",
+        "privado concertado",
+        "privado",
+        "público-titularidad privada"
+      ],
+      "required": true
+    },
+    "titular": {
+      "type": "string"
+    },
+    "direccion_via_tipo": {
+      "type": "string"
+    },
+    "direccion_via_nombre": {
+      "type": "string"
+    },
+    "direccion_via_numero": {
+      "type": "string"
+    },
+    "cod_postal": {
+      "type": "integer"
+    },
+    "coord_x": {
+      "type": "integer"
+    },
+    "coord_y": {
+      "type": "integer"
+    },
+    "municipio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "municipios",
+      "inversedBy": "centros"
+    },
+    "telf1": {
+      "type": "string"
+    },
+    "telf2": {
+      "type": "string"
+    },
+    "telf3": {
+      "type": "string"
+    },
+    "telf4": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "web": {
+      "type": "string"
+    },
+    "typecentro": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "typecentro",
+      "inversedBy": "centros"
+    },
+    "correo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "destinatarios"
+    }
+  }
+}

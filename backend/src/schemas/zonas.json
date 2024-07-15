@@ -1,0 +1,14 @@
+{
+  "uid": "zonas",
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "municipios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "origin": "municipios"
+    }
+  }
+}

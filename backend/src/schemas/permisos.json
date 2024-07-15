@@ -1,0 +1,17 @@
+{
+  "uid": "permissions",
+  "attributes": {
+    "action": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "role",
+      "inversedBy": "permissions",
+      "configurable": false
+    }
+  }
+}

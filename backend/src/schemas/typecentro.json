@@ -1,0 +1,22 @@
+{
+  "uid": "typecentro",
+  "attributes": {
+    "siglas": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "es_de_interes": {
+      "type": "boolean",
+      "required": true
+    },
+    "centros": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "origin": "centros"
+    }
+  }
+}

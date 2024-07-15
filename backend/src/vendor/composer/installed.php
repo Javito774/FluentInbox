@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => 'd67feba296c3f23359289a540bcfeb7e2755a5cc',
+        'name' => '__root__',
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'd67feba296c3f23359289a540bcfeb7e2755a5cc',
+            'dev_requirement' => false,
+        ),
+        'firebase/php-jwt' => array(
+            'pretty_version' => 'v6.10.0',
+            'version' => '6.10.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../firebase/php-jwt',
+            'aliases' => array(),
+            'reference' => 'a49db6f0a5033aef5143295342f1c95521b075ff',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.9.1',
+            'version' => '6.9.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => '039de174cd9c17a8389754d3b877a2ed22743e18',
+            'dev_requirement' => false,
+        ),
+    ),
+);

@@ -1,0 +1,32 @@
+{
+  "uid": "queue",
+  "attributes": {
+    "mail": {
+      "type": "integer",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["principal", "cc", "occ"]
+    },
+    "destinatario": {
+      "type": "email",
+      "required": true
+    },
+    "sent_at": {
+      "type": "datetime"
+    },
+    "schedule_at": {
+      "type": "datetime"
+    },
+    "cretedAt": {
+      "type": "datetime",
+      "writtable": false
+    },
+    "cretedBy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "users"
+    }
+  }
+}

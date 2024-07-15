@@ -1,0 +1,247 @@
+.wrapper {
+  padding: 0 24px;
+}
+.headerWrapper {
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.wrapper svg {
+  width: 20px;
+  height: auto;
+  color: currentColor;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mailbody {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: repeat(3, auto) 1fr;
+  padding-bottom: 12px;
+}
+.button {
+  border: none;
+  background-color: rgb(255 255 255);
+  color: rgb(17 24 39);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px inset,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button:hover {
+  background-color: #f1f5f9;
+}
+
+.mainButton {
+  background-color: #3b82f6;
+  color: #fff;
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.mainButton:hover {
+  background-color: #2563eb;
+}
+
+.button:disabled {
+  background: #e2e8f0 !important;
+  color: #94a3b8;
+}
+
+.maillabelwrapper {
+  border-bottom: 2px solid #f1f5f9;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  min-height: 48px;
+  gap: 12px;
+  padding: 0 12px;
+}
+
+.mailLabel {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 500;
+  align-self: flex-start;
+  margin: 10px 0;
+  padding: 4px 0;
+  height: 28px;
+}
+
+.mailBadge {
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px inset,
+    rgba(107, 114, 128, 0.1) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  background-color: rgb(249, 250, 251);
+  color: rgb(75, 85, 99);
+  border-radius: 6px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.lista {
+  color: rgb(29, 78, 216);
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px inset,
+    rgba(29, 78, 216, 0.1) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  background-color: rgb(239, 246, 255);
+}
+
+.centro {
+  color: rgb(126, 34, 206);
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px inset,
+    rgba(126, 34, 206, 0.1) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  background-color: rgb(250, 245, 255);
+}
+
+.mailBadgesWrapper {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.closeButton {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.closeButton:hover {
+  background-color: #6b728033;
+}
+
+.input {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.fullWidth {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.editorWrapper {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.editor {
+  width: 100%;
+  max-width: 660px;
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 12px 24px;
+}
+
+.inputUsers {
+  border: 0;
+  flex-grow: 1;
+  min-width: 170px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.inputUsers:focus {
+  outline: 0;
+}
+
+.destinputWrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+}
+
+.lastSave {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  align-self: flex-end;
+  margin-right: 24px;
+}
+
+.destinatariosFilter {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  top: 26px;
+  width: 300px;
+  max-width: 300px;
+  height: 150px;
+  max-height: 150px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px,
+    rgba(15, 23, 42, 0.05) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  z-index: 2;
+}
+
+.destinatariosFilter::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Handle */
+.destinatariosFilter::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+.destinatariosFilter::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.destSelector {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.destSelector:hover {
+  background-color: #f1f5f9;
+}

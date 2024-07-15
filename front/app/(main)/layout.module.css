@@ -1,0 +1,228 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  color: rgb(17 24 39);
+}
+
+.branding img {
+  width: auto;
+  max-height: 40px;
+  height: 40px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 64px;
+}
+.branding h1 {
+  font-weight: 600;
+  color: #ef4444;
+  color: #000;
+  font-size: 18px;
+}
+.buttonsRight {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 18rem;
+  background-color: #eff6ff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aside ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.aside a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 40px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.aside a:hover {
+  background-color: #dbeafe;
+}
+
+.selected {
+  background-color: #bfdbfe !important;
+}
+
+.asideContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.buttonRedactar {
+  border-width: 0;
+  width: fit-content;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.375rem;
+  background-color: #3b82f6;
+  color: #fff;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+}
+
+.buttonRedactar:hover {
+  background-color: #2563eb !important;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.principalContentWrapper {
+  padding-left: 18rem;
+  display: grid;
+  grid-template-rows: 64px 1fr;
+  height: 100%;
+}
+
+.profile {
+  display: flex;
+  color: rgb(17 24 39);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.profile svg {
+  margin-left: 0.5rem;
+  color: rgb(156 163 175);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.contentWrapper {
+  padding-top: 0.25rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.buscador form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  box-shadow:
+    inset 0 0 0 0px #fff,
+    inset 0 0 0 1px rgb(209 213 219),
+    0 1px 2px 0 rgb(0 0 0 / 5%);
+  color: rgb(17 24 39);
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-width: 0px;
+  border-radius: 0.375rem;
+  width: 100%;
+  max-width: 720px;
+  background-color: #eff6ff;
+  height: 40px;
+}
+.buscador input[type="search"] {
+  border-width: 0;
+  font-size: 14px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.buscador button {
+  background-color: transparent;
+  border-width: 0;
+}
+
+.listasParagrah {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.noMargin {
+  margin-top: 6px !important;
+}
+
+.profileBubbleWrapper {
+  position: relative;
+  user-select: none;
+}
+
+.userMenu {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  margin-top: 12px;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  width: max-content;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px,
+    rgba(15, 23, 42, 0.05) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  z-index: 1;
+}
+
+.userMenu ul {
+  list-style: none;
+}
+
+.userMenu li {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.userMenu li:hover {
+  background-color: #fef2f2;
+}
+
+.userMenu svg {
+  width: 24px;
+}
+
+.red {
+  color: #ef4444;
+}

@@ -1,0 +1,80 @@
+.calendar_grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+  gap: 5px;
+}
+
+.monthWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.monthWrapper button {
+  border: none;
+  background-color: rgb(255 255 255);
+  color: rgb(17 24 39);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 0px 0px inset,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.monthWrapper button:hover {
+  background-color: #f1f5f9;
+}
+
+.monthWrapper span {
+  min-width: 158px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.calendar_day {
+  padding: 6px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calendar_day:hover {
+  background-color: #f1f5f9;
+}
+
+.calendar_day.selected_day:hover {
+  background-color: #2563eb;
+}
+
+.calendar_day.weekDay:hover {
+  background-color: transparent;
+}
+
+.calendar_day:nth-child(7n) {
+  color: #ef4444;
+}
+
+.weekDay {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.selected_day {
+  background-color: #3b82f6;
+  color: #ffffff !important;
+}

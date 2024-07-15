@@ -1,0 +1,53 @@
+{
+  "uid": "users",
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "searchable": false
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true,
+      "searchable": false
+    },
+    "confirmationToken": {
+      "type": "string",
+      "private": true,
+      "searchable": false
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "role",
+      "inversedBy": "users",
+      "configurable": false
+    }
+  }
+}

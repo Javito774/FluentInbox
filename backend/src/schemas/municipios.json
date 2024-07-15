@@ -1,0 +1,26 @@
+{
+  "uid": "municipios",
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "zona": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "zonas"
+    },
+    "distritos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "distritos",
+      "mappedBy": "municipio"
+    },
+    "centros": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "origin": "centros"
+    }
+  }
+}

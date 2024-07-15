@@ -1,0 +1,10 @@
+{
+  "uid": "destinatario",
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}
+

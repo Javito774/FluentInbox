@@ -1,0 +1,49 @@
+.editorWrapper {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.buttonWrapper {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-bottom: 2px solid #f1f5f9;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+
+.buttonWrapper button {
+  background-color: transparent;
+  border: 0;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.buttonWrapper button:hover {
+  background-color: #f3f4f6;
+}
+
+.editable {
+  padding-bottom: 64px !important;
+}
+
+.editable > * {
+  margin-top: 6px;
+}
+
+.editable img {
+  max-width: 552px;
+  margin: 20px 0;
+}
+
+.editable:focus {
+  outline: none;
+}
+
+.editable a {
+  color: #3b82f6;
+  text-decoration: underline;
+}

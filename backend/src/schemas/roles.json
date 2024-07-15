@@ -1,0 +1,34 @@
+{
+  "uid": "roles",
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "required": true,
+      "configurable": false
+    },
+    "description": {
+      "type": "string",
+      "configurable": false
+    },
+    "type": {
+      "type": "string",
+      "unique": true,
+      "configurable": false
+    },
+    "permissions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "permission",
+      "mappedBy": "role",
+      "configurable": false
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "user",
+      "mappedBy": "role",
+      "configurable": false
+    }
+  }
+}
